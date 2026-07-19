@@ -15,38 +15,41 @@ import {
 const slides = [
   {
     id: 1,
-    image: "https://picsum.photos/1600/700?random=1",
-    title: "Together We Build A Better Tomorrow",
-    subtitle:
-      "Dedicated to public service, development, transparency and creating opportunities for every citizen.",
+    image: "/banner1.jpeg",
+    title: "एक आवाज़, एक विश्वास, लाखों का साथ।",
+    subtitle: "सलामी देता नेता, उठता हर हाथ – बदलाव की नई उम्मीद के साथ।",
   },
   {
     id: 2,
-    image: "https://picsum.photos/1600/700?random=2",
-    title: "Development With Trust",
-    subtitle:
-      "Working tirelessly for education, healthcare, employment and infrastructure.",
+    image: "/banner2.jpeg",
+    title: "सांस्कृतिक धरोहर की साझेदारी।",
+    subtitle: "अतीत के प्रेरणास्त्रोत के सामने, भविष्य की योजना का अनावरण।",
   },
   {
     id: 3,
-    image: "https://picsum.photos/1600/700?random=3",
-    title: "Your Voice, Our Commitment",
-    subtitle:
-      "Every citizen matters. Together we can create a stronger future.",
+    image: "/banner3.jpeg",
+    title: "गाँव की मिट्टी, जनता का साथ।",
+    subtitle: "स्थानीय लोगों के बीच नेतृत्व और विश्वास का अनूठा पल।",
   },
   {
     id: 4,
-    image: "https://picsum.photos/1600/700?random=4",
-    title: "Join The Movement",
+    image: "/banner4.jpeg",
+    title: "खेतों की बात, नेता का संवाद।",
     subtitle:
-      "Let's work together for progress, prosperity and social justice.",
+      "ग्रामीण परिवेश में सरोकारों पर खुली चर्चा, बुनियादी मुद्दों की पहचान।",
+  },
+  {
+    id: 5,
+    image: "/banner5.jpeg",
+    title: "कला का उत्सव, संस्कृति का सम्मान।",
+    subtitle: "लोक कलाकारों को सम्मानित करता एक भव्य सांस्कृतिक संध्या।",
   },
 ];
 
 const HeroCarousel = () => {
   const plugin = React.useRef(
     Autoplay({
-      delay: 40000,
+      delay: 4000,
       stopOnInteraction: false,
     }),
   );
@@ -75,22 +78,22 @@ const HeroCarousel = () => {
 
                 <div className="absolute inset-0 bg-black/55" />
 
-                <div className="absolute inset-0 flex items-center">
+                <div className="absolute inset-0 flex items-center mt-0 md:mt-20">
                   <div className="max-w-7xl mx-auto px-6">
                     <div className="max-w-2xl">
-                      <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-5">
+                      <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
                         People's Leader
                       </span>
 
-                      <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                      <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight">
                         {slide.title}
                       </h1>
 
-                      <p className="mt-6 text-lg text-gray-200 leading-8">
+                      <p className="mt-3 text-lg text-gray-200 leading-8">
                         {slide.subtitle}
                       </p>
 
-                      <div className="flex flex-wrap gap-4 mt-8">
+                      <div className="flex flex-wrap gap-4 mt-4">
                         <button className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-lg text-white font-semibold transition">
                           Join Us
                         </button>

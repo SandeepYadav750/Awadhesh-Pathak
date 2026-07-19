@@ -40,7 +40,7 @@ const Footer = () => {
               className="bg-white rounded-md px-5 py-3 w-full lg:w-80 text-gray-700 outline-none"
             />
 
-            <button className="bg-black hover:bg-gray-900 text-white px-8 rounded-md font-semibold transition">
+            <button className="bg-black hover:bg-gray-900 text-white px-4 md:px-8 py-4 rounded-md font-semibold transition">
               Join Us
             </button>
           </div>
@@ -139,12 +139,6 @@ const Footer = () => {
             </li>
 
             <li>
-              <Link href="/news" className="hover:text-red-500 transition">
-                News
-              </Link>
-            </li>
-
-            <li>
               <Link href="/gallery" className="hover:text-red-500 transition">
                 Gallery
               </Link>
@@ -172,15 +166,6 @@ const Footer = () => {
                 className="hover:text-red-500 transition duration-300"
               >
                 Our Initiatives
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                href="/media"
-                className="hover:text-red-500 transition duration-300"
-              >
-                Media
               </Link>
             </li>
 

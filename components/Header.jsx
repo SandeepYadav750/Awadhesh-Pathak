@@ -10,12 +10,8 @@ const menus = [
     href: "/",
   },
   {
-    name: "About",
+    name: "About Us",
     href: "/about",
-  },
-  {
-    name: "News",
-    href: "/news",
   },
   {
     name: "Initiatives",
@@ -26,11 +22,11 @@ const menus = [
     href: "/gallery",
   },
   {
-    name: "Media",
-    href: "/media",
+    name: "FAQ's",
+    href: "/faq",
   },
   {
-    name: "Contact",
+    name: "Contact Us",
     href: "/contact",
   },
 ];
