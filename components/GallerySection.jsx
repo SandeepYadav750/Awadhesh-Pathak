@@ -34,7 +34,7 @@ const galleryImages = [
 
 const GallerySection = () => {
   return (
-    <section className="py-8 md:py-20 bg-gray-50">
+    <section className="py-8 md:py-20 ">
       <div className="max-w-7xl mx-auto px-5">
         {/* Heading */}
 
@@ -79,10 +79,10 @@ const GallerySection = () => {
 
         {/* Button */}
 
-        <div className="flex justify-center mt-14">
+        <div className="flex justify-center mt-8">
           <Link
             href="/gallery"
-            className="mt-10 bg-red-600 hover:bg-red-700 duration-300 text-white px-8 py-4 rounded-lg flex items-center gap-3 font-semibold shadow-lg"
+            className=" bg-red-600 hover:bg-red-700 duration-300 text-white px-8 py-4 rounded-lg flex items-center gap-3 font-semibold shadow-lg"
           >
             View Full Gallery
             <FaArrowRight />

@@ -44,13 +44,11 @@ const initiatives = [
 
 const InitiativesSection = () => {
   return (
-    <section className="py-8 md:py-20 bg-white">
+    <section id="initiatives" className="py-8 md:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-5">
-
         {/* Heading */}
 
         <div className="text-center mb-14">
-
           <span className="uppercase text-red-600 tracking-widest font-bold text-sm">
             Our Initiatives
           </span>
@@ -60,13 +58,11 @@ const InitiativesSection = () => {
           </h2>
 
           <div className="w-24 h-1 bg-red-600 rounded-full mx-auto mt-5"></div>
-
         </div>
 
         {/* Cards */}
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-
           {initiatives.map((item, index) => (
             <div
               key={index}
@@ -86,7 +82,6 @@ const InitiativesSection = () => {
               "
             >
               <div className="flex justify-center">
-
                 <div
                   className="
                     w-20
@@ -104,7 +99,6 @@ const InitiativesSection = () => {
                 >
                   {item.icon}
                 </div>
-
               </div>
 
               <h3 className="mt-6 text-xl font-bold text-gray-900">
@@ -127,15 +121,12 @@ const InitiativesSection = () => {
                   duration-300
                 "
               ></div>
-
             </div>
           ))}
-
         </div>
-
       </div>
     </section>
   );
-}
+};
 
 export default InitiativesSection;

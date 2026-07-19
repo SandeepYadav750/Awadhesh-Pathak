@@ -133,12 +133,6 @@ const Footer = () => {
             </li>
 
             <li>
-              <Link href="/vision" className="hover:text-red-500 transition">
-                Vision
-              </Link>
-            </li>
-
-            <li>
               <Link href="/gallery" className="hover:text-red-500 transition">
                 Gallery
               </Link>
@@ -162,7 +156,7 @@ const Footer = () => {
           <ul className="space-y-4">
             <li>
               <Link
-                href="/initiatives"
+                href="/#initiatives"
                 className="hover:text-red-500 transition duration-300"
               >
                 Our Initiatives
@@ -171,25 +165,7 @@ const Footer = () => {
 
             <li>
               <Link
-                href="/events"
-                className="hover:text-red-500 transition duration-300"
-              >
-                Events
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                href="/press-release"
-                className="hover:text-red-500 transition duration-300"
-              >
-                Press Release
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                href="/join"
+                href="#"
                 className="hover:text-red-500 transition duration-300"
               >
                 Join Campaign

@@ -15,7 +15,7 @@ const menus = [
   },
   {
     name: "Initiatives",
-    href: "/initiatives",
+    href: "/#initiatives",
   },
   {
     name: "Gallery",
@@ -50,12 +50,14 @@ const Navbar = () => {
                 className="object-contain"
               />
 
-              <div>
+              <div className="flex flex-col gap-0">
                 <h2 className="text-lg font-bold text-red-700">
                   Awadhesh Pathak
                 </h2>
 
-                <p className="text-sm text-gray-500">Samajwadi Party</p>
+                <p className="text-sm font-bold text-green-900">
+                  Samajwadi Party
+                </p>
               </div>
             </Link>
 
