@@ -54,10 +54,16 @@ const Footer = () => {
 
         <div>
           <div className="flex items-center gap-3">
-            <Image src="/favicon.png" alt="logo" width={65} height={65} />
+            <Image
+              src="/logo.jpeg"
+              alt="logo"
+              width={60}
+              height={80}
+              className="object-contain rounded-full"
+            />
 
             <div>
-              <h2 className="text-3xl font-bold text-white">Awadhesh Pathak</h2>
+              <h2 className="text-xl font-bold text-white">Awadhesh Pathak</h2>
 
               <p className="text-red-500 font-medium">
                 जनसेवा • विकास • विश्वास
@@ -169,15 +175,6 @@ const Footer = () => {
                 className="hover:text-red-500 transition duration-300"
               >
                 Join Campaign
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                href="/privacy-policy"
-                className="hover:text-red-500 transition duration-300"
-              >
-                Privacy Policy
               </Link>
             </li>
           </ul>
@@ -297,17 +294,6 @@ const Footer = () => {
             >
               X (Twitter)
             </a>
-
-            <Link
-              href="/privacy-policy"
-              className="hover:text-red-500 transition"
-            >
-              Privacy Policy
-            </Link>
-
-            <Link href="/terms" className="hover:text-red-500 transition">
-              Terms & Conditions
-            </Link>
           </div>
         </div>
       </div>

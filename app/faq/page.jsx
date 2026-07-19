@@ -7,10 +7,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import { HelpCircle } from "lucide-react";
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
-
 const faqs = [
   {
     question: "आपको राजनीति में आने की प्रेरणा कहाँ से मिली?",
@@ -46,15 +42,11 @@ const faqs = [
 
 const Faq = () => {
   return (
-    <section className="py-8 md:py-20 bg-linear-to-b from-white to-red-50">
+    <section className="py-8 md:py-16 bg-linear-to-b from-white to-red-50">
       <div className="max-w-5xl mx-auto px-5">
         {/* Heading */}
 
         <div className="text-center mb-14">
-          <span className="text-red-600 uppercase tracking-[3px] font-bold text-sm">
-            Frequently Asked Questions
-          </span>
-
           <h2 className="mt-3 text-4xl md:text-5xl font-extrabold text-gray-900">
             Have Questions?
           </h2>

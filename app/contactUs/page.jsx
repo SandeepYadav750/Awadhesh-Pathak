@@ -33,18 +33,18 @@ const ContactPage = () => {
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-linear-to-r from-red-700 to-red-500 py-20 text-white">
-        <div className="max-w-7xl mx-auto px-5 text-center">
-          <h1 className="text-5xl font-bold">Contact Us</h1>
+      {/* <div className=" mb-14"></div> */}
 
-          <p className="mt-4 text-lg">
-            We'd love to hear from you. Reach out anytime.
+      <section className="py-8 md:py-16 bg-gray-50">
+        {/* Heading */}
+
+        <div className="text-center mb-14">
+          <h2 className="mt-3 text-4xl font-bold text-gray-900">Contact Us</h2>
+          <p className="mt-6 max-w-2xl mx-auto text-sm font-bold text-green-900">
+            हमें आपसे सुनकर अच्छा लगेगा। कभी भी संपर्क करें।
           </p>
+          <div className="w-24 h-1 bg-red-600 rounded-full mx-auto mt-5"></div>
         </div>
-      </section>
-
-      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12">
           {/* Left */}
 
@@ -203,13 +203,13 @@ const ContactPage = () => {
       <section>
         <iframe
           title="Google Map"
-          src="https://www.google.com/maps?q=Lucknow&output=embed"
-          className="w-full h-[450px]"
+          src="https://www.google.com/maps?q=Varanasi&output=embed"
+          className="w-full h-100 md:h-130 border-0"
           loading="lazy"
         />
       </section>
     </>
   );
-}
+};
 
 export default ContactPage;

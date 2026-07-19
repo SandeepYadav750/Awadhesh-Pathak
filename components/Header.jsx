@@ -11,7 +11,7 @@ const menus = [
   },
   {
     name: "About Us",
-    href: "/about",
+    href: "/aboutUs",
   },
   {
     name: "Initiatives",
@@ -27,7 +27,7 @@ const menus = [
   },
   {
     name: "Contact Us",
-    href: "/contact",
+    href: "/contactUs",
   },
 ];
 
@@ -43,11 +43,11 @@ const Navbar = () => {
 
             <Link href="/" className="flex items-center">
               <Image
-                src="/logo.png"
+                src="/logo.jpeg"
                 alt="logo"
                 width={60}
                 height={60}
-                className="object-contain"
+                className="object-contain rounded-full"
               />
 
               <div className="flex flex-col gap-0">
