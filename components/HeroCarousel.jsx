@@ -11,6 +11,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Link from "next/link";
 
 const slides = [
   {
@@ -94,13 +95,19 @@ const HeroCarousel = () => {
                       </p>
 
                       <div className="flex flex-wrap gap-4 mt-4">
-                        <button className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-lg text-white font-semibold transition">
+                        <Link
+                          href="/#joinUs"
+                          className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-lg text-white font-semibold transition"
+                        >
                           Join Us
-                        </button>
+                        </Link>
 
-                        <button className="border-2 border-white hover:bg-white hover:text-black px-8 py-4 rounded-lg text-white font-semibold transition">
-                          Learn More
-                        </button>
+                        <Link
+                          href="/aboutUs"
+                          className="border-2 border-white hover:bg-white hover:text-black px-8 py-4 rounded-lg text-white font-semibold transition"
+                        >
+                          Know More...
+                        </Link>
                       </div>
                     </div>
                   </div>

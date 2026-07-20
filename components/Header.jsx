@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, Users } from "lucide-react";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const menus = [
   {
@@ -33,6 +34,14 @@ const menus = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname === href;
+  };
 
   return (
     <>
@@ -69,12 +78,12 @@ const Navbar = () => {
                   key={index}
                   href={menu.href}
                   className={`relative text-gray-700 font-medium hover:text-red-600 transition ${
-                    index === 0 ? "text-red-600" : ""
+                    isActive(menu.href) ? "text-red-600" : ""
                   }`}
                 >
                   {menu.name}
 
-                  {index === 0 && (
+                  {isActive(menu.href) && (
                     <span className="absolute -bottom-2 left-0 h-0.75 w-full rounded bg-red-600"></span>
                   )}
                 </Link>
@@ -83,10 +92,13 @@ const Navbar = () => {
 
             {/* Desktop Join Button */}
             <div className="hidden lg:block">
-              <button className="flex items-center gap-2 rounded-full bg-red-600 px-6 py-3 text-white hover:bg-red-700 transition">
+              <Link
+                href="/#joinUs"
+                className="flex items-center gap-2 rounded-full bg-red-600 px-6 py-3 text-white hover:bg-red-700 transition"
+              >
                 Join Us
                 <Users size={18} />
-              </button>
+              </Link>
             </div>
 
             {/* Mobile Hamburger */}
@@ -115,17 +127,25 @@ const Navbar = () => {
                 key={menu.name}
                 href={menu.href}
                 onClick={() => setIsOpen(false)}
-                className="block border-b px-6 py-4 text-gray-700 hover:bg-red-50 hover:text-red-600"
+                className={`block border-b px-6 py-4 hover:bg-red-50 hover:text-red-600 ${
+                  isActive(menu.href)
+                    ? "text-red-600 bg-red-50"
+                    : "text-gray-700"
+                }`}
               >
                 {menu.name}
               </Link>
             ))}
 
             <div className="p-4">
-              <button className="w-full rounded-full bg-red-600 py-3 text-white font-medium hover:bg-red-700 flex items-center justify-center gap-2">
+              <Link
+                href="/#joinUs"
+                onClick={() => setIsOpen(false)}
+                className="w-full rounded-full bg-red-600 py-3 text-white font-medium hover:bg-red-700 flex items-center justify-center gap-2"
+              >
                 Join Us
                 <Users size={18} />
-              </button>
+              </Link>
             </div>
           </div>
         </div>

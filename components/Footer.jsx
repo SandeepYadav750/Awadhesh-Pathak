@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { toast } from "react-toastify";
 import {
   FaFacebookF,
   FaInstagram,
@@ -12,11 +15,23 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent page reload
+
+    if (!e.target[0].value) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+
+    toast.success("Form submitted successfully!");
+    e.target.reset(); // Reset the form
+  };
+
   return (
     <footer className="bg-[#161616] text-gray-300">
       {/* ================= CTA SECTION ================= */}
 
-      <div className="bg-[#b30000]">
+      <div id="joinUs" className="bg-[#b30000]">
         <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div>
             <span className="uppercase tracking-[5px] text-red-100 font-semibold">
@@ -33,17 +48,23 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row w-full lg:w-auto gap-3">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col sm:flex-row w-full lg:w-auto gap-3"
+          >
             <input
               type="email"
               placeholder="Enter your email"
               className="bg-white rounded-md px-5 py-3 w-full lg:w-80 text-gray-700 outline-none"
             />
 
-            <button className="bg-black hover:bg-gray-900 text-white px-4 md:px-8 py-4 rounded-md font-semibold transition">
+            <button
+              type="submit"
+              className="cursor-pointer bg-black hover:bg-gray-800 hover:shadow-lg text-white px-4 md:px-8 py-4 rounded-md font-semibold transition"
+            >
               Join Us
             </button>
-          </div>
+          </form>
         </div>
       </div>
 

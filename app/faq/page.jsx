@@ -51,7 +51,7 @@ const Faq = () => {
             Have Questions?
           </h2>
 
-          <p className="mt-5 text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="mt-6 max-w-2xl mx-auto text-sm font-bold text-green-900">
             एक मज़बूत और ज़्यादा विकसित निर्वाचन क्षेत्र बनाने के प्रति मेरे
             विज़न, मिशन और प्रतिबद्धता के बारे में और जानें।
           </p>

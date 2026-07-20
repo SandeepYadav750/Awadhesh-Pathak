@@ -7,28 +7,23 @@ import { FaImages, FaArrowRight } from "react-icons/fa";
 const galleryImages = [
   {
     id: 1,
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80",
+    image: "/gallery1.jpeg",
   },
   {
     id: 2,
-    image:
-      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&q=80",
+    image: "/gallery2.jpeg",
   },
   {
     id: 3,
-    image:
-      "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&q=80",
+    image: "/gallery3.jpeg",
   },
   {
     id: 4,
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80",
+    image: "/gallery4.jpeg",
   },
   {
     id: 5,
-    image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80",
+    image: "/gallery5.jpeg",
   },
 ];
 
