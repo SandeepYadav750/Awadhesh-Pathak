@@ -218,7 +218,7 @@ const Footer = () => {
               <div>
                 <h4 className="text-white font-semibold">Office Address</h4>
 
-                <p className="text-gray-400">Uttar Pradesh, India</p>
+                <p className="text-gray-400">Shivpur, Varanashi, Uttar Pradesh, India</p>
               </div>
             </div>
 

@@ -59,7 +59,7 @@ const AboutSection = () => {
               ))}
             </div>
             <Link
-              href="/about"
+              href="/aboutUs"
               className="mt-10 bg-red-600 hover:bg-red-700 duration-300 text-white px-8 py-4 rounded-lg flex items-center gap-3 font-semibold shadow-lg"
             >
               Read More About Awadhesh Pathak
